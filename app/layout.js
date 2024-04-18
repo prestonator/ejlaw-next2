@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
+const Navigation = dynamic(() => import("@/components/Navigation"), { ssr: false });
 
 export const metadata = {
 	title: "EJ Law",
