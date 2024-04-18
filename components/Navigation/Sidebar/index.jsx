@@ -20,7 +20,7 @@ const Sidebar = ({ navItems }) => {
 				<SheetTrigger>Open</SheetTrigger>
 				<SheetContent side="left" className="flex flex-col">
 					<Link href="/">
-                        <Image src="/logo.webp" alt="logo" width={120} height={60} />
+                        <Image src="/logo.webp" alt="logo" width={120} height={60} loading="eager"/>
                     </Link>
 					{navItems.map((item, index) => {
 						if (item.title === "Logo") {
